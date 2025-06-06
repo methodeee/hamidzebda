@@ -3,19 +3,19 @@ const produits = [
   {
     nom: "Boba Thé",
     image: "boba.png",
-    prix:"6",
+    prix: 6,
     description: "Un délicieux thé sucré aux perles de tapioca."
   },
   {
     nom: "Matcha Latte",
     image: "boba.png",
-    prix:"6",
+    prix:6,
     description: "Une boisson au matcha douce et crémeuse."
   },
   {
     nom: "Thé Noir Glacé",
     image: "boba.png",
-    prix:"6",
+    prix:6,
     description: "Un classique désaltérant, parfait pour l'été."
   }
  
@@ -36,7 +36,7 @@ const produits = [
         div.appendChild(img);
 
         let price=document.createElement("p");
-        price.textContent="prix : "+produit.prix;
+        price.textContent=produit.prix;
         div.appendChild(price);
         
         let para=document.createElement("p");
@@ -56,9 +56,9 @@ const produits = [
     document.querySelector("#panier").appendChild(item);
    
     total++;
-    totalprix+=produit.prix;
+    totalprix=totalprix+produit.prix;
     document.querySelector("#compte").textContent=total;
-     document.querySelector("#compte").value=totalprix;
+     document.querySelector("#comptePrix").textContent=totalprix+"DH";
 });
 
          document.querySelector("#catalogue").appendChild(div);
