@@ -24,3 +24,4 @@ Thumbs.db
 
 # Nodemon (si généré)
 nodemon-debug.log
+.env
