@@ -3,7 +3,7 @@ const quantites = {};
 
 const produits = [
   {
-    nom: "Boba Thé",
+    nom: "Boba Thé ",
     image: "boba.png",
     prix: 6,
     description: "Un délicieux thé sucré aux perles de tapioca."
